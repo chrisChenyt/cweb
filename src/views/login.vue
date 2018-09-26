@@ -53,7 +53,7 @@ export default {
       this.isLoginModel = true
     },
     signin() {
-      if (!util.checkMobile(parseInt(this.rAccount)) || this.rPassword=='') {//手机号格式是否正确或密码为空
+      if (!util.checkMobile(parseInt(this.rAccount))) {//手机号格式是否正确
         this.$toast({
           duration: 1500,
           message: '您输入的手机号有误'
@@ -96,7 +96,7 @@ export default {
       }
     },
     login() {
-      if (!util.checkMobile(parseInt(this.account)) || this.password=='') {//手机号格式是否正确或密码为空
+      if (!util.checkMobile(parseInt(this.account))) {//手机号格式是否正确
         this.$toast({
           duration: 1500,
           message: '您输入的手机号有误'
