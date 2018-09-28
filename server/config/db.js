@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize'); // 引入sequelize
 
 // 使用url连接的形式进行连接，注意将root: 后面的XXXX改成自己数据库的密码
-const Todolist = new Sequelize('mysql://root:chenyutong123@localhost/todolist',{
+const Todolist = new Sequelize('mysql://root:chenyutong123@39.107.236.111/cweb',{
   define: {
     timestamps: false // 取消Sequelzie自动给数据表加入时间戳（createdAt以及updatedAt）
   }
